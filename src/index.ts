@@ -1,5 +1,6 @@
 import { db } from './db.js';
 import express from "express";
+import { ObjectId } from 'mongodb';
 
 import dotenv from 'dotenv';
 
@@ -39,4 +40,18 @@ app.get('/books', (req, res) => {
         .catch(err => {
             res.status(500).json({ error: "Could not fetch the document" });
         })
+})
+
+app.get('/books/:id', (req, res) => {
+
+    if (ObjectId.isValid(req.params.id)) {
+        dbSuccess.collection('books')
+            .findOne({ _id: new ObjectId(req.params.id) })
+            .then(doc => {
+                res.status(200).json(doc)
+            })
+            .catch(err => res.status(500).json({ error: 'Could not fetch the document.' }))
+    } else {
+        res.status(500).json({ error: "Not valid document id" })
+    }
 })
