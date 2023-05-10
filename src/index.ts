@@ -7,7 +7,8 @@ import dotenv from 'dotenv';
 dotenv.config();
 
 // init app & middleware
-const app = express()
+const app = express();
+app.use(express.json());
 
 const port = process.env.PORT || 3000;
 
@@ -54,4 +55,17 @@ app.get('/books/:id', (req, res) => {
     } else {
         res.status(500).json({ error: "Not valid document id" })
     }
+})
+
+app.post('/books/', (req, res) => {
+    const book = req.body
+
+    dbSuccess.collection('books')
+        .insertOne(book)
+        .then(result => {
+            res.status(201).json(result)
+        })
+        .catch(err => {
+            res.status(500).json({ error: "Could not create the new document" })
+        })
 })
