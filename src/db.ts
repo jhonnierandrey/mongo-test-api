@@ -7,9 +7,12 @@ type dbObject = {
     getDb: () => {}
 }
 
+
+
 export const db = {
     connectToDb: (cb) => {
-        MongoClient.connect(process.env.MONGODB_URL)
+        let uri = process.env.MONGODB_ATLAS_URL;
+        MongoClient.connect(uri)
             .then((client) => {
                 dbConnection = client.db()
                 return cb()
