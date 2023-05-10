@@ -10,8 +10,6 @@ const app = express()
 
 const port = process.env.PORT || 3000;
 
-console.log(port)
-
 // db connection
 
 const { connectToDb, getDb } = db;
@@ -29,6 +27,16 @@ connectToDb((err) => {
 
 // routes
 app.get('/books', (req, res) => {
-    res.json({ msg: 'welcome to the api, please provide your API key' })
-    console.log(dbSuccess);
+    let books = []
+    // .find() cursor toArray forEach
+    dbSuccess.collection('books')
+        .find()
+        .sort({ author: 1 })
+        .forEach(book => books.push(book))
+        .then(() => {
+            res.status(200).json(books)
+        })
+        .catch(err => {
+            res.status(500).json({ error: "Could not fetch the document" });
+        })
 })
