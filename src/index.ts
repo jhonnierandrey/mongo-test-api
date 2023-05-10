@@ -13,7 +13,6 @@ app.use(express.json());
 const port = process.env.PORT || 3000;
 
 // db connection
-
 const { connectToDb, getDb } = db;
 
 let dbSuccess;
@@ -29,11 +28,16 @@ connectToDb((err) => {
 
 // routes
 app.get('/books', (req, res) => {
+    const page = Number(req.query.page) || 0;
+    const booksPerPage = 3;
     let books = []
+
     // .find() cursor toArray forEach
     dbSuccess.collection('books')
         .find()
         .sort({ author: 1 })
+        .skip(page * booksPerPage)
+        .limit(booksPerPage)
         .forEach(book => books.push(book))
         .then(() => {
             res.status(200).json(books)
