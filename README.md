@@ -1,5 +1,5 @@
-# mongo-test-api
+# Bookstore API with NodeJS + TS and MongoDB
 
-NodeJS Api using MongoDB training (with TS)
+Basic NodeJS Api using MongoDB training (with TS)
 
 as seen at [Complete MongoDb Tutorial by Net Ninja](https://netninja.dev/p/complete-mongodb-tutorial).

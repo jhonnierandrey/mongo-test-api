@@ -1,0 +1,170 @@
+[
+  {
+    "title": "the final empire",
+    "author": "brandon sanderson",
+    "rating": 9,
+    "pages": 643,
+    "genres": [
+      "fantasy",
+      "adventure",
+      "action"
+    ],
+    "reviews": [
+      {
+        "name": "john",
+        "body": "epic book with great characters and world-building!"
+      },
+      {
+        "name": "jane",
+        "body": "highly recommended for any fantasy fan!"
+      }
+    ]
+  },
+  {
+    "title": "the name of the wind",
+    "author": "patrick rothfuss",
+    "rating": 9,
+    "pages": 662,
+    "genres": [
+      "fantasy",
+      "romance",
+      "adventure"
+    ],
+    "reviews": [
+      {
+        "name": "sara",
+        "body": "one of the best fantasy books i've ever read!"
+      },
+      {
+        "name": "mike",
+        "body": "couldn't put it down!"
+      }
+    ]
+  },
+  {
+    "title": "the lies of locke lamora",
+    "author": "scott lynch",
+    "rating": 9,
+    "pages": 499,
+    "genres": [
+      "fantasy",
+      "crime",
+      "mystery"
+    ],
+    "reviews": [
+      {
+        "name": "kate",
+        "body": "absolutely loved this book!"
+      },
+      {
+        "name": "tom",
+        "body": "great characters and a thrilling story!"
+      }
+    ]
+  },
+  {
+    "title": "the blade itself",
+    "author": "joe abercrombie",
+    "rating": 9,
+    "pages": 529,
+    "genres": [
+      "fantasy",
+      "dark fantasy",
+      "grimdark"
+    ],
+    "reviews": [
+      {
+        "name": "david",
+        "body": "a great start to an excellent trilogy!"
+      },
+      {
+        "name": "amy",
+        "body": "highly recommended for any fantasy fan!"
+      }
+    ]
+  },
+  {
+    "title": "assassin's apprentice",
+    "author": "robin hobb",
+    "rating": 9,
+    "pages": 392,
+    "genres": [
+      "fantasy",
+      "coming of age",
+      "epic"
+    ],
+    "reviews": [
+      {
+        "name": "mark",
+        "body": "great characters and an immersive world!"
+      },
+      {
+        "name": "sarah",
+        "body": "one of the best fantasy books i've ever read!"
+      }
+    ]
+  },
+  {
+    "title": "the way of shadows",
+    "author": "brent weeks",
+    "rating": 9,
+    "pages": 645,
+    "genres": [
+      "fantasy",
+      "action",
+      "assassins"
+    ],
+    "reviews": [
+      {
+        "name": "jack",
+        "body": "a fantastic read from start to finish!"
+      },
+      {
+        "name": "emily",
+        "body": "highly recommended for any fantasy fan!"
+      }
+    ]
+  },
+  {
+    "title": "the black prism",
+    "author": "brent weeks",
+    "rating": 9,
+    "pages": 697,
+    "genres": [
+      "fantasy",
+      "magic",
+      "political intrigue"
+    ],
+    "reviews": [
+      {
+        "name": "alex",
+        "body": "a must-read for any fantasy fan!"
+      },
+      {
+        "name": "rachel",
+        "body": "great characters and a thrilling story!"
+      }
+    ]
+  },
+  {
+    "title": "the eye of the world",
+    "author": "robert jordan",
+    "rating": 9,
+    "pages": 814,
+    "genres": [
+      "fantasy",
+      "epic",
+      "adventure"
+    ],
+    "reviews": [
+      {
+        "name": "chris",
+        "body": "one of the best epic fantasies ever written!"
+      },
+      {
+        "name": "laura",
+        "body": "I will ready it again"
+      }
+    ]
+  }
+]
